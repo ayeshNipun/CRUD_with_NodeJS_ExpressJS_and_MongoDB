@@ -69,6 +69,16 @@ app.get('/articles/add', function(req, res){
 	});
 })
 
+//View articles route
+app.get('/articles/:id', function(req, res){
+	Article.findById(req.params.id, function(err, article){
+		res.render('article', {
+			article: article
+		});
+	});
+	
+});
+
 //articles save route
 app.post('/articles/add', function(req, res){
 	let article = new Article();
