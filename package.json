@@ -1,0 +1,17 @@
+{
+	"name": "nodekb",
+	"version": "1.0.0",
+	"description": "simple knowladge app",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index"
+	},
+	"author": "ven0m",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"express": "^4.16.4",
+		"mongoose": "^5.4.11",
+		"pug": "^2.0.3"
+	}
+}
